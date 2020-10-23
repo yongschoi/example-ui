@@ -26,7 +26,6 @@
 </template>
 <script>
 import axios from "axios"
-import adapter from "axios/lib/adapters/http"
 
 export default {
   data () {
@@ -38,8 +37,8 @@ export default {
     this.findByAll()
   },
   methods: {
-    async findByAll() {
-      await axios.get(`${this.$apiURI}/user/excludezero`, { adapter })
+    findByAll() {
+      axios.get(`${this.$apiURI}/user/excludezero`)
         .then(res => { 
           this.users = res.data
         })
