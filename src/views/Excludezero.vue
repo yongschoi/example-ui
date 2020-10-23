@@ -38,8 +38,8 @@ export default {
     this.findByAll()
   },
   methods: {
-    findByAll() {
-      axios.get(`${this.$apiURI}/user/excludezero`, { adapter })
+    async findByAll() {
+      await axios.get(`${this.$apiURI}/user/excludezero`, { adapter })
         .then(res => { 
           this.users = res.data
         })
