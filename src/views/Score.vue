@@ -26,6 +26,7 @@
 </template>
 <script>
 import axios from "axios"
+import adapter from "axios/lib/adapters/http"
 
 export default {
   data () {
@@ -38,7 +39,7 @@ export default {
   },
   methods: {
     findByAll() {
-      axios.get(`${this.$apiURI}/user/score`)
+      axios.get(`${this.$apiURI}/user/score`, { adapter })
         .then(res => { 
           this.users = res.data
         })
