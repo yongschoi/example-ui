@@ -28,7 +28,7 @@
         </v-list-item>
         <v-list-item router :to="{name: 'excludezero'}" exact>
           <v-list-item-action>
-            <v-icon>mdi-account-minus</v-icon>
+            <v-icon>mdi-account-details-online</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>User Exclude Zero</v-list-item-title>
