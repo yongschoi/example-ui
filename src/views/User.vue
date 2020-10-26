@@ -37,8 +37,8 @@ export default {
     this.findByAll()
   },
   methods: {
-    async findByAll() {
-      await axios.get(`${this.$apiURI}/user/all`)
+    findByAll() {
+      axios.get(`${this.$apiURI}/user/all`)
         .then(res => { 
           this.users = res.data
         })
