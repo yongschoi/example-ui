@@ -23,6 +23,11 @@ const routes = [
     path: "/excludezero",
     name: "excludezero",
     component: () => import(/* webpackChunkName: "excludezero" */ "../views/Excludezero.vue")
+  },
+  {
+    path: "/axiostest",
+    name: "axiostest",
+    component: () => import(/* webpackChunkName: "axiostest" */ "../views/AxiosTest.vue")
   }
 
 ];

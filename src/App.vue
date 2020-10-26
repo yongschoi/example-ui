@@ -10,6 +10,14 @@
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item router :to="{name: 'axiostest'}" exact>
+          <v-list-item-action>
+            <v-icon>mdi-cursor-default-click</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Axios Test</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
         <v-list-item router :to="{name: 'user'}" exact>
           <v-list-item-action>
             <v-icon>mdi-account-multiple</v-icon>
