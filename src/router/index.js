@@ -10,26 +10,40 @@ const routes = [
     component: () => import(/* webpackChunkName: "home" */ "../views/Home.vue")
   },
   {
+    path: "/axiostest",
+    name: "axiostest",
+    component: () => import(/* webpackChunkName: "axiostest" */ "../views/AxiosTest.vue")
+  },
+  {
     path: "/user",
     name: "user",
-    component: () => import(/* webpackChunkName: "user" */ "../views/User.vue")
+    component: () => import(/* webpackChunkName: "user" */ "../views/user/User.vue")
   },
   {
     path: "/score",
     name: "score",
-    component: () => import(/* webpackChunkName: "score" */ "../views/Score.vue")
+    component: () => import(/* webpackChunkName: "score" */ "../views/user/Score.vue")
   },
   {
     path: "/excludezero",
     name: "excludezero",
-    component: () => import(/* webpackChunkName: "excludezero" */ "../views/Excludezero.vue")
+    component: () => import(/* webpackChunkName: "excludezero" */ "../views/user/Excludezero.vue")
   },
   {
-    path: "/axiostest",
-    name: "axiostest",
-    component: () => import(/* webpackChunkName: "axiostest" */ "../views/AxiosTest.vue")
+    path: "/product",
+    name: "product",
+    component: () => import(/* webpackChunkName: "product" */ "../views/product/Product.vue")
+  },
+  {
+    path: "/search",
+    name: "search",
+    component: () => import(/* webpackChunkName: "search" */ "../views/product/Search.vue")
+  },
+  {
+    path: "/category",
+    name: "category",
+    component: () => import(/* webpackChunkName: "category" */ "../views/product/Category.vue")
   }
-
 ];
 
 const router = new VueRouter({

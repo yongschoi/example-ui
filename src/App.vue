@@ -62,6 +62,30 @@
               <v-list-item-title>Product</v-list-item-title>
             </v-list-item-content>
           </template>
+          <v-list-item router :to="{name: 'product'}" exact>
+            <v-list-item-action>
+              <v-icon>mdi-apps</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Product All</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item router :to="{name: 'search'}" exact>
+            <v-list-item-action>
+              <v-icon>mdi-magnify</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Product Search</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item router :to="{name: 'category'}" exact>
+            <v-list-item-action>
+              <v-icon>mdi-card-search</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Product Category</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>          
         </v-list-group>      
       </v-list>
     </v-navigation-drawer>

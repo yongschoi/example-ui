@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     findByAll() {
-      axios.get(`${this.$apiURI}/user/excludezero`)
+      axios.get(`${this.$userAPIUri}/user/excludezero`)
         .then(res => { 
           this.users = res.data
         })
