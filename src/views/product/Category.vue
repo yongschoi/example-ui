@@ -27,7 +27,7 @@
         <tr v-for="product in products" :key="product.id">
           <td align=center>
             <v-avatar size="100">
-              <v-img :src="product.image"></v-img>
+              <v-img :src="product.imageUrl"></v-img>
             </v-avatar>
           </td>
           <td class="text-center">{{ product.name }}</td>
@@ -36,7 +36,7 @@
         </tr>
       </tbody>
     </template>
-  </v-simple-table>
+  </v-simple-table> 
 </v-container> 
 </template>
 <script>
@@ -67,6 +67,8 @@ export default {
       axios.get(`${this.$productAPIUri}/product/category/${category}`)
         .then(res => { 
           this.products = res.data
+          console.log(this.products[0].name)
+          console.log(this.products[0].imageUrl)
           this.origin_products = res.data
         })
         .catch(err => {

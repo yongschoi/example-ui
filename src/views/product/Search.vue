@@ -22,7 +22,7 @@
         <tr v-for="product in products" :key="product.id">
           <td align=center>
             <v-avatar size="100">
-              <v-img :src="product.image"></v-img>
+              <v-img :src="product.imageUrl"></v-img>
             </v-avatar>
           </td>
           <td class="text-center">{{ product.name }}</td>

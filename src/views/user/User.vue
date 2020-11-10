@@ -16,7 +16,7 @@
           <td class="text-center">{{ user.score }}</td>
           <td align=center>
             <v-avatar size="40">
-              <v-img :src="user.photo"></v-img>
+              <v-img :src="user.photoUrl"></v-img>
             </v-avatar>
           </td>
         </tr>
