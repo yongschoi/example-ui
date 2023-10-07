@@ -83,7 +83,7 @@
               <v-icon>mdi-apps</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Product All</v-list-item-title>
+              <v-list-item-title>All</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item router :to="{name: 'search'}" exact>
@@ -91,7 +91,7 @@
               <v-icon>mdi-magnify</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Product Search</v-list-item-title>
+              <v-list-item-title>Search</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item router :to="{name: 'category'}" exact>
@@ -99,7 +99,7 @@
               <v-icon>mdi-card-search</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Product Category</v-list-item-title>
+              <v-list-item-title>Category Search</v-list-item-title>
             </v-list-item-content>
           </v-list-item>          
         </v-list-group>     
